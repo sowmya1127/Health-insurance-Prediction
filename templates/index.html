@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Prediction</title>
+</head>
+
+<body>
+    <div>
+        <h1>Health Prediction</h1>
+
+        <form action="{{url_for('predict')}}" method="post">
+            <input type="number" name="Age" placeholder="Age of the person" required="required" />
+            <input type="number" name="Sex" min="0" max="1" placeholder="Gender of the Person" required="required" />
+            <input type="number" name="BMI"  placeholder="BMI of the person" required="required" />
+            <input type="number" name="Children" min="0" max="5" placeholder="No of children " required="required" />
+            <input type="number" name="smoker"  min="0" max="1"  required="required" />
+            <input type="number" name="northwest" min="0" max="5"  required="required" />
+            <input type="number" name="southeast" min="0" max="5"  required="required" />
+            <input type="number" name="southwest" min="0" max="5"  required="required" />
+            
+            <button type="submit" class="btn btn-success">Total Charges</button>
+
+        </form>
+
+        <br>
+
+    </div>
+
+</body>
+
+</html>
